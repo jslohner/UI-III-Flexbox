@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0.2px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -64,3 +64,153 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* code for the full container */
+
+.container {
+	margin: 5% 0% 5%;
+}
+
+/* code for navigation bar */
+
+nav {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+nav .links {
+	display: flex;
+	justify-content: space-evenly;
+	width: 85%
+}
+
+nav .links a {
+	color: grey;
+	font-size: 120%;
+	text-decoration: none;
+}
+
+/* code for header */
+
+header{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-flow: row nowrap;
+	height: 100vh;
+}
+
+header div {
+	display: flex;
+	justify-content: center;
+}
+
+header .title-container {
+	flex-flow: row wrap;
+	align-items: center;
+	text-align: center;
+}
+
+header .title-container .title {
+	font-size: 800%;
+}
+
+header .title-container .title-button {
+	display: flex;
+	border: 1px solid black;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+	height: 6vh;
+	font-size: 120%;
+}
+
+/* code for middle section */
+
+.middle-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	/* border-top: 1px solid black;
+	border-bottom: 1px solid black; */
+}
+
+.middle-section section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	font-size: 150%;
+}
+
+.content {
+	padding: 2%;
+}
+
+/* code for features and about section */
+
+.middle-section .features-section {
+	border-top: 1px solid black;
+}
+
+.middle-section .about-section {
+	border-top: 1px solid black;
+}
+
+/* code for middle image */
+
+.middle-section .middle-img {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+}
+
+/* code for services, product, and vision section */
+
+.middle-section .services-section {
+	border-bottom: 1px solid black;
+}
+
+.middle-section .product-section {
+	border-bottom: 1px solid black;
+}
+
+.middle-section .vision-section {
+	border-bottom: 1px solid black;
+}
+
+/* code for contact-section */
+
+.contact-section {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+}
+
+.contact-section h2 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 150%;
+	width: 14%;
+	padding-top: 2%;
+}
+
+.contact-section address {
+	display: flex;
+	align-items: center;
+	flex-flow: column wrap;
+	font-size: 150%;
+	width: 30%;
+	line-height: 2;
+}
+
+/* code for footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 3%;
+	font-size: 150%;
+}
