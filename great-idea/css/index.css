@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0.2px solid grey; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -69,6 +69,12 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	margin: 5% 0% 5%;
+}
+
+/* code for services page full container */
+
+.services-container {
+	margin: 5% 0% 1%;
 }
 
 /* code for navigation bar */
@@ -126,6 +132,7 @@ header .title-container .title-button {
 	font-size: 120%;
 }
 
+/* code for services page header */
 
 .services-header {
 	display: flex;
@@ -178,7 +185,9 @@ header .title-container .title-button {
 .services-middle-section {
 	display: flex;
 	flex-flow: row wrap;
-    justify-content: center;
+	justify-content: center;
+	padding-bottom: 2%;
+	border-bottom: 2px solid black;
 }
 
 .services-middle-section div {
@@ -187,7 +196,6 @@ header .title-container .title-button {
 	align-content: space-evenly;
 	margin: 1%;
 	padding: 3%;
-/* 	padding: 1% 5% 5% 1%; */
 	font-size: 200%;
 }
 	
@@ -290,11 +298,52 @@ header .title-container .title-button {
 	line-height: 2;
 }
 
+/* code for services bottom section */
+
+.services-bottom-section {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 3% 0% 5%;
+}
+
+.services-bottom-section div {
+	display: flex;
+	font-size: 200%;
+	width: 50%;
+}
+
+.services-bottom-section .facts-section {
+	flex-flow: row wrap;
+	padding: 0% 6% 6% 5%;
+	line-height: 1.2;
+}
+
+.services-bottom-section div .services-info-img {
+    padding-left: 2%;
+    width: 90%;
+}
+
+.services-bottom-section div ul {
+	padding-top: 4%;
+	line-height: 1.8;
+	list-style-type: square;
+    list-style-position: inside;
+}
+
 /* code for footer */
 
 footer {
 	display: flex;
 	justify-content: center;
 	padding: 3%;
+	font-size: 150%;
+}
+
+/* code for services footer */
+
+.services-footer {
+	display: flex;
+	justify-content: center;
+	padding: 3% 3% 0%;
 	font-size: 150%;
 }
