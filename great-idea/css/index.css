@@ -126,14 +126,39 @@ header .title-container .title-button {
 	font-size: 120%;
 }
 
+
+.services-header {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.services-header div {
+	justify-content: center;
+	width: 90%;
+}
+
+.services-header div .services-header-img {
+	width: 100%;
+}
+
+.services-header .services-title-container {
+	flex-flow: column nowrap;
+	width: 90%;
+	font-size: 200%;
+	border-bottom: 2px solid black;
+	padding-bottom: 3%;
+}
+
+.services-header .services-title-container .services-title {
+	padding: 1% 0% 1%;
+}
+
 /* code for middle section */
 
 .middle-section {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	/* border-top: 1px solid black;
-	border-bottom: 1px solid black; */
 }
 
 .middle-section section {
@@ -148,14 +173,73 @@ header .title-container .title-button {
 	padding: 2%;
 }
 
+/* code for services page middle section */
+
+.services-middle-section {
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: center;
+}
+
+.services-middle-section div {
+	border: 2px solid black;
+	background-color: rgb(230, 230, 230);
+	align-content: space-evenly;
+	margin: 1%;
+	padding: 3%;
+/* 	padding: 1% 5% 5% 1%; */
+	font-size: 200%;
+}
+	
+.services-middle-section .digital-design-section {
+	width: 44%;
+}
+	
+.services-middle-section .ux-ui-section {
+	width: 44%
+}
+
+.services-middle-section .digital-marketing-section {
+	width: 44%;
+}
+
+.services-middle-section .web-development-section {
+	width: 44%;
+}
+
+.services-middle-section .ios-development-section {
+	width: 44%;
+}
+
+.services-middle-section .android-development-section {
+	width: 44%;
+}
+
+.services-middle-section div button {
+    width: 40%;
+    padding: 4%;
+    margin-top: 8%;
+    border-radius: 10px;
+	border: 2px solid black;
+	font-size: 60%;
+}
+
+.services-middle-section div h2 {
+	padding-bottom: 4%;
+}
+
+.services-middle-section div p {
+	line-height: 1.3;
+}
+
 /* code for features and about section */
 
 .middle-section .features-section {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 }
 
 .middle-section .about-section {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 }
 
 /* code for middle image */
@@ -169,15 +253,15 @@ header .title-container .title-button {
 /* code for services, product, and vision section */
 
 .middle-section .services-section {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 .middle-section .product-section {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 .middle-section .vision-section {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 /* code for contact-section */
